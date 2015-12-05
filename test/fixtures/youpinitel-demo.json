@@ -1,0 +1,31 @@
+{
+    "joints": {
+        "base": {
+            "servo_id": 1
+        },
+        "shoulder": {
+            "servo_id": 2,
+            "angles_range": [30, 260],
+            "servo_setup": {
+                "TorqueLimit": 1023,
+                "Punch": 48
+            }
+        },
+        "elbow": {
+            "servo_id": 3,
+            "angles_range": [15, 270]
+        },
+        "wrist": {
+            "servo_id": 4,
+            "angles_range": [55, 230]
+        },
+        "gripper": {
+            "servo_id": 5,
+            "angles_range": [75, 150]
+        }
+    },
+    "kinematics": {
+        "segment_lengths": [104.4, 104.4, 99.0],
+        "joints_sequence": ["base", "shoulder", "elbow", "wrist"]
+    }
+}
